@@ -11,16 +11,14 @@ Meteor export mongo collection to csv
 
 # Client side, template #
 
-<code>
   <div class="col-md-4">
     <button class="btn btn-info btn-block" id="buttonDownload">List</button>
   </div>
-</code>
 
 ## JavaScript file ##
 
 <code>
-  Template.admin.events({
+  //events
   'click #buttonDownload': function(event) {
     var nameFile = 'fileDownloaded.csv';
     Meteor.call('download', function (err, fileContent){
@@ -29,5 +27,4 @@ Meteor export mongo collection to csv
         saveAs(blob, nameFile);
       }
     });
-  }
 </code>
