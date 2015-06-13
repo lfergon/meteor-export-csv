@@ -9,15 +9,7 @@ Meteor export mongo collection to csv
     }
   </code>
 
-# Client side, template
-
-  <code>
-    <div class="col-md-4">
-      <button class="btn btn-info btn-block" id="buttonDownload">List</button>
-    </div>
-  </code>
-
-# JavaScript file
+# JavaScript file, client side
 
   <code>
     //events
