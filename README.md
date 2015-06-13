@@ -1,7 +1,7 @@
 # export-csv #
 Meteor export mongo collection to csv
 
-## Meteor methods server side  ##
+# Meteor methods server side  #
 
 <code>
   download: function() {
@@ -9,7 +9,7 @@ Meteor export mongo collection to csv
   }
 </code>
 
-## Client side, template ##
+# Client side, template #
 
 <code>
   <div class="col-md-4">
@@ -17,7 +17,7 @@ Meteor export mongo collection to csv
   </div>
 </code>
 
-## javascript file ##
+## JavaScript file ##
 
 <code>
   Template.admin.events({
