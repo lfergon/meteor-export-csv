@@ -4,7 +4,9 @@ Meteor export mongo collection to csv
 # Meteor methods server side
 
     download: function() {
-      return exportcsv.exportToCSV(CollectionToExtract.find().fetch());
+      var collection = CollectionToExtract.find().fetch();
+      var delimiter = ";" // Optional, defaults to ",";
+      return exportcsv.exportToCSV(collection, delimiter);
     }
 
 # JavaScript file, client side
