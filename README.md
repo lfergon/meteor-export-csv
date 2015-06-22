@@ -5,8 +5,9 @@ Meteor export mongo collection to csv
 
     download: function() {
       var collection = CollectionToExtract.find().fetch();
+      var heading = true; // Optional, defaults to true
       var delimiter = ";" // Optional, defaults to ",";
-      return exportcsv.exportToCSV(collection, delimiter);
+      return exportcsv.exportToCSV(collection, heading, delimiter);
     }
 
 # JavaScript file, client side
@@ -20,3 +21,8 @@ Meteor export mongo collection to csv
           saveAs(blob, nameFile);
         }
       });
+
+# Known issues
+
+- Documents need to have an identical length of elements.
+- Objects are not displayed (export JSON instead).
